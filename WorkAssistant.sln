@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkAssistant", "WorkAssistant\WorkAssistant.csproj", "{2D7C9AE7-5144-4CC2-9C8A-5EF2594AC80E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkAssistant.API", "WorkAssistant.API\WorkAssistant.API.csproj", "{1265989B-4EEF-4950-BBDC-AC0F28C15DE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkAssistant.Core", "WorkAssistant.Core\WorkAssistant.Core.csproj", "{F3E0065B-2401-4545-B7D6-A53BF95631BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{2D7C9AE7-5144-4CC2-9C8A-5EF2594AC80E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D7C9AE7-5144-4CC2-9C8A-5EF2594AC80E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D7C9AE7-5144-4CC2-9C8A-5EF2594AC80E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1265989B-4EEF-4950-BBDC-AC0F28C15DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1265989B-4EEF-4950-BBDC-AC0F28C15DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1265989B-4EEF-4950-BBDC-AC0F28C15DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1265989B-4EEF-4950-BBDC-AC0F28C15DE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3E0065B-2401-4545-B7D6-A53BF95631BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3E0065B-2401-4545-B7D6-A53BF95631BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3E0065B-2401-4545-B7D6-A53BF95631BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3E0065B-2401-4545-B7D6-A53BF95631BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

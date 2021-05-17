@@ -5,6 +5,8 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 using WorkAssistant.Core;
 using WorkAssistant.MVVM.ViewModel;
 
@@ -19,10 +21,10 @@ namespace WorkAssistant
         private string _expanded = "M21,15.61L19.59,17L14.58,12L19.59,7L21,8.39L17.44,12L21,15.61M3,6H16V8H3V6M3,13V11H13V13H3M3,18V16H16V18H3Z";
         private bool _isExpanded = false;
 
-        public MainWindow()
+        public MainWindow(IOptions<Api> api)
         {
             InitializeComponent();
-            DataContext = new MainViewModel(LoginService.Instance.EventAggregator);
+            DataContext = new MainViewModel(api.Value, LoginService.Instance.EventAggregator);
             Expander.Data = Geometry.Parse(_closed);
         }
 
