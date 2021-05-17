@@ -1,0 +1,73 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style TargetType="TextBox"
+           x:Key="CustomText">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+                    <Grid>
+                        <TextBox MinWidth="200" 
+                                 Foreground="White"
+                                 Height="{TemplateBinding Height}" 
+                                 FontFamily="{TemplateBinding FontFamily}"
+                                 Text="{TemplateBinding Text}"
+                                 FontSize="16"
+                                 Margin="6 0"
+                                 Background="Transparent"
+                                 BorderThickness="0" 
+                                 VerticalAlignment="Center"
+                                 HorizontalAlignment="Left"
+                                 CaretBrush="White" 
+                                 SelectionBrush="#A0FF6B00"
+                                 x:Name="Login"
+                                 Style="{x:Null}"/>
+
+                        <TextBlock IsHitTestVisible="False"
+                                   HorizontalAlignment="Left"
+                                   Margin="6 0"
+                                   Text="Username \ Email"
+                                   Background="Transparent"
+                                   VerticalAlignment="Center"
+                                   FontSize="16"
+                                   Foreground="DarkGray">
+
+                            <TextBlock.Style>
+                                <Style TargetType="{x:Type TextBlock}">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Text, ElementName=Login}" Value="">
+                                            <Setter Property="Visibility" Value="Visible"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                    <Setter Property="Visibility" Value="Hidden"/>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+
+                        
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="TextBox"
+           x:Key="NavigationText">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+                    <TextBox Text="{TemplateBinding Text}"
+                             VerticalAlignment="Center"
+                             Foreground="#323232"
+                             FontSize="16"
+                             BorderThickness="0"
+                             Margin="15 0"
+                             FontStyle="Oblique"
+                             FontWeight="Bold"
+                             FontFamily="{DynamicResource Manrope}"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+</ResourceDictionary>
